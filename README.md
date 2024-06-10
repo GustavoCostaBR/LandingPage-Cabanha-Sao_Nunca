@@ -1,0 +1,1 @@
+Projeto de landing page para a terceira tarefa do curso full stack da MaisPraTi.
