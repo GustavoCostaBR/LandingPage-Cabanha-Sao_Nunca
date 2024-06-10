@@ -4,82 +4,96 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+
 	<title>Landing Page</title>
 </head>
 
 <body id="corpo">
-	<header class="cabecalho">
-		<h1 class="cabecalho__titulo">Cabanha São Nunca</h1>
-	</header>
-	<section class="descricao">
-		<ul class="descicao__lista">
-			<li>
-				Araricá - RS
-			</li>
-			<li>
-				Coelhos de Raça
-			</li>
-			<li>
-				Do Mini ao Gigante
-			</li>
-			<li>
-				Criando Genética
-			</li>
-		</ul>
+	<div class="container">
+		<header class="cabecalho">
+			<h1 class="cabecalho__titulo">Cabanha São Nunca</h1>
+		</header>
 
-		<img class="descricao__slogan" src="images/Slogan.jpeg" alt="Slogan Aqui">
-
-	</section>
-
-	<section class="servicos">
-		<div class="servicos__mini__coelho">
-			<p>Mini coelho ideal para crianças!</p>
-			<img src="images/CoelhoMini.jpeg" alt="">
-		</div>
-
-		<div class="servicos__coelho__gigante">
-			<p>Coelho gigante, ideal para companhia!</p>
-			<img src="images/CoelhoGigante+Moca.jpeg" alt="">
-		</div>
-	</section>
-
-	<section class="contato">
-		<div class="contato__form">
-			<form action="" method="post">
-				<div class="form-field">
-					<label for="nome">Nome:</label>
-					<input type="text" id="nome" name="nome" required>
-				</div>
-				<div class="form-field">
-					<label for="email">Email:</label>
-					<input type="email" id="email" name="email" required>
-				</div>
-				<div class="form-field">
-					<label for="telefone">Número de Telefone:</label>
-					<input type="tel" id="telefone" name="telefone" required pattern="\d{2}-\d{5}-\d{4}"
-						placeholder="XX-XXXXX-XXXX">
-				</div>
-				<div class="form-field">
-					<input type="submit" value="Enviar">
-				</div>
-			</form>
-		</div>
-
-		<div class="contato__paginas">
-			<ul>
-				<li><a href="https://www.instagram.com/cabanhasaonunca/">Instagram</a></li>
-				<li><a href="">Whatsapp</a></li>
+		<section class="descricao">
+			<ul class="descricao__lista">
+				<li>
+					Araricá - RS
+				</li>
+				<li>
+					Coelhos de Raça
+				</li>
+				<li>
+					Do Mini ao Gigante
+				</li>
+				<li>
+					Criando Genética
+				</li>
 			</ul>
-		</div>
+			<ul class="descricao__lista">
+				<li><img class="descricao__lista__imagens" src="images/Coelhos_mesa.jpeg" alt=""></li>
+				<li><img class="descricao__lista__imagens" src="images/Coelhos_mesa_2.jpeg" alt=""></li>
+			</ul>
+			<ul class="descricao__lista">
+				<li><img class="descricao__lista__imagens" src="images/Coelhos_mesa_3.jpeg" alt=""></li>
+				<li><img class="descricao__lista__imagens" src="images/Coelho_cesta.jpeg" alt=""></li>
+			</ul>
+
+			<img class="descricao__slogan" src="images/Slogan.jpeg" alt="Slogan Aqui">
+
+		</section>
+
+		<section class="servicos">
+			<div class="servicos__mini__coelho">
+				<p>Mini coelho ideal para crianças!</p>
+				<img src="images/CoelhoMini.jpeg" alt="">
+			</div>
+
+			<div class="servicos__coelho__gigante">
+				<p>Coelho gigante, ideal para companhia!</p>
+				<img src="images/CoelhoGigante+Moca.jpeg" alt="">
+			</div>
+		</section>
+
+		<section class="contato">
+			<div class="contato__form">
+				<form action="" method="post">
+					<div class="form-field">
+						<label for="nome">Nome:</label>
+						<input type="text" id="nome" name="nome" required>
+					</div>
+					<div class="form-field">
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+					<div class="form-field">
+						<label for="telefone">Número de Telefone:</label>
+						<input type="tel" id="telefone" name="telefone" required pattern="\d{2}-\d{5}-\d{4}"
+							placeholder="XX-XXXXX-XXXX">
+					</div>
+					<div class="form-field">
+						<input type="submit" value="Enviar">
+					</div>
+				</form>
+			</div>
+
+			<div class="contato__paginas">
+				<ul>
+					<li><a href="https://www.instagram.com/cabanhasaonunca/">Instagram</a></li>
+					<li><a href="https://wa.me/5551995136633">Whatsapp</a></li>
+				</ul>
+			</div>
 
 
 
-	</section>
+		</section>
 
-	<footer class="rodape">
-		<p>Não faço ideia o que por aqui</p>
+		<footer class="rodape">
+			<p>Não faço ideia o que por aqui</p>
 
-	</footer>
+		</footer>
+	</div>
 
 </body>
 

@@ -1,0 +1,54 @@
+body {
+	font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, Sans-serif;
+}
+
+.container {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+.cabecalho {
+	background: #333;
+	color: #fff;
+	padding: 10px 0;
+}
+
+.descricao__lista {
+	float: left;
+
+	li {
+		margin-left: 0;
+		padding-left: 0;
+		padding-top: 25%;
+		list-style: none;
+
+	}
+}
+
+.descricao__lista__imagens {
+	display: block;
+	/* padding-top: 15%; */
+	width: 150px;
+	height: 150px;
+}
+
+.descricao__slogan {
+	float: right;
+	width: 50%;
+	height: 50%;
+	display: block;
+}
+
+.servicos {
+	display: block;
+	clear: both;
+	/* float: left; */
+}
+
+/* .contato {
+	float: left;
+}
+
+.rodape {
+	float: left;
+} */
