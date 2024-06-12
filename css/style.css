@@ -186,11 +186,11 @@ form {
 .form-field input[type="email"],
 .form-field input[type="tel"] {
     float: left;
-    width: calc(100% - 160px); /* Espaço para label + margem */
+    width: calc(100% - 160px);
     padding: 10px;
     border: 1px solid var(--cor-borda);
     border-radius: 4px;
-    box-sizing: border-box; /* Inclui padding e border no width */
+    box-sizing: border-box;
 }
 
 .form-field input[type="submit"] {
