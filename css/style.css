@@ -1,22 +1,32 @@
+:root {
+	--cor-primaria: #333;
+	--cor-secundaria: rgb(133, 81, 58);
+	--cor-fontes: #fff;
+	--cor-borda: #ccc;
+
+	--fonte-textos: "Lucida Grande", "Lucida Sans Unicode", Arial, Sans-serif;
+
+}
+
 body {
-	font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, Sans-serif;
+	font: 12px var(--fonte-textos);
 	margin: 0;
 	padding: 0;
-	background: linear-gradient(to bottom, #333, rgb(133, 81, 58));
+	background: linear-gradient(to bottom, var(--cor-primaria), var(--cor-secundaria));
 }
 
 .container {
 	width: 1080px;
 	margin: 0 auto;
 	height: 100%;
-	background: linear-gradient(to bottom, rgb(133, 81, 58), #333);
+	background: linear-gradient(to bottom, var(--cor-secundaria), var(--cor-primaria));
 	padding: 30px;
 }
 
 .cabecalho {
 	/* background: #333; */
-	background: linear-gradient(to bottom, rgb(133, 81, 58), #333);
-	color: #fff;
+	background: linear-gradient(to bottom, var(--cor-secundaria), var(--cor-primaria));
+	color: var(--cor-fontes)
 	padding: 10px 0;
 	text-align: center;
 }
@@ -34,7 +44,7 @@ body {
 
 .descricao {
 	/* background-color: #333; */
-    color: #fff;
+    color: var(--cor-fontes);
 	margin: 0;
 	padding: 0;
 }
@@ -55,7 +65,7 @@ body {
 		list-style: none;
 		font-size: 20px;
 		text-align: center;
-		background-color: #333;
+		background-color: var(--cor-primaria);
 	}
 }
 
@@ -99,7 +109,7 @@ body {
 
 .servicos__titulo {
 	text-align: center;
-	color: #fff;
+	color: var(--cor-fontes);
 	font-size: 30px;
 	margin-top: 50px;
 	margin-bottom: 0px;
@@ -120,7 +130,7 @@ body {
 	text-align: center;
 
 	p {
-		color: #fff;
+		color: var(--cor-fontes);
 		font-size: 15px;
 	}
 }
@@ -142,7 +152,7 @@ body {
 
 .contato__titulo {
 	text-align: center;
-	color: #fff;
+	color: var(--cor-fontes);
 	font-size: 30px;
 	margin-top: 50px;
 	margin-bottom: 0px;
@@ -156,8 +166,7 @@ form {
     max-width: 600px;
     margin: 0 auto;
 	padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--cor-fontes);
     border-radius: 8px;
 }
 
@@ -179,7 +188,7 @@ form {
     float: left;
     width: calc(100% - 160px); /* Espaço para label + margem */
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--cor-borda);
     border-radius: 4px;
     box-sizing: border-box; /* Inclui padding e border no width */
 }
@@ -188,8 +197,8 @@ form {
     clear: both;
     width: 100%;
     padding: 10px;
-    background-color: #333;
-    color: #ffffff;
+    background-color: var(--cor-primaria);
+    color: var(--cor-fontes);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -198,7 +207,7 @@ form {
 }
 
 .form-field input[type="submit"]:hover {
-    background-color: rgb(133, 81, 58);
+    background-color: var(--cor-secundaria);
 }
 
 .contato {
@@ -234,7 +243,7 @@ form {
 	}
 
 	p {
-		color: #fff;
+		color: var(--cor-fontes);
 		font-size: 20px;
 		margin-top: 0;
 	}
