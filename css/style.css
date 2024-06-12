@@ -2,7 +2,7 @@ body {
 	font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, Sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: #f8f8f8;
+	background: linear-gradient(to bottom, #333, rgb(133, 81, 58));
 }
 
 .container {
@@ -10,18 +10,19 @@ body {
 	margin: 0 auto;
 	background-color: #ffffff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
+	background: linear-gradient(to bottom, rgb(133, 81, 58), #333);
 }
 
 .cabecalho {
-	background: #333;
+	/* background: #333; */
+	background: linear-gradient(to bottom, rgb(133, 81, 58), #333);
 	color: #fff;
 	padding: 10px 0;
 	text-align: center;
 }
 
 .cabecalho__titulo {
-    font-size: 28px;
+    font-size: 50px;
     margin: 0;
 }
 
@@ -32,7 +33,7 @@ body {
 }
 
 .descricao {
-	background-color: #333;
+	/* background-color: #333; */
     color: #fff;
 	margin: 0;
 	padding: 0;
@@ -41,7 +42,7 @@ body {
 .descricao__lista {
 	float: left;
 	text-align: left;
-	background-color: #333;
+	/* background-color: #333; */
 	height: 500px;
 	padding-left: 15px;
 	clear: both;
@@ -54,7 +55,7 @@ body {
 		list-style: none;
 		font-size: 20px;
 		text-align: center;
-		background-color: black;
+		background-color: #333;
 	}
 }
 
@@ -96,6 +97,14 @@ body {
 	float: left;
 }
 
+.servicos__titulo {
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	margin-top: 50px;
+	margin-bottom: 0px;
+}
+
 .servicos__produtos {
 	float: left;
 	width: 50%;
@@ -109,6 +118,11 @@ body {
 
 .servicos__produtos__produto {
 	text-align: center;
+
+	p {
+		color: #fff;
+		font-size: 15px;
+	}
 }
 
 .imagem__coelho_1_2 {
@@ -120,9 +134,108 @@ body {
 }
 
 .contato {
+	display: block;
+	clear: both;
+	text-align: center;
+	padding-top: 1px;
+}
+
+.contato__titulo {
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	margin-top: 50px;
+	margin-bottom: 0px;
+}
+
+.contato__form{
+	float: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+	padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-field {
+    clear: both;
+    margin-bottom: 15px;
+}
+
+.form-field label {
+    float: left;
+    width: 150px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field input[type="tel"] {
+    float: left;
+    width: calc(100% - 160px); /* Espaço para label + margem */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Inclui padding e border no width */
+}
+
+.form-field input[type="submit"] {
+    clear: both;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-field input[type="submit"]:hover {
+    background-color: rgb(133, 81, 58);
+}
+
+
+.contato__paginas{
+	/* float: left; */
+	width: 100%;
+	text-align: center;
+
+	ul {
+		padding-left: 0px;
+		li {
+			display: inline;
+			margin-left: 0;
+			padding-left: 0;
+			list-style: none;
+
+			img {
+				width: 50px;
+				height: 50px;
+				padding: 10px;
+				margin-top: 20px;
+				filter: invert(100%);
+
+			}
+		}
+	}
+
+
+
+}
+
+
+.contato {
 	clear: both;
 }
 
 .rodape {
 	float: left;
+	clear: both;
 }
