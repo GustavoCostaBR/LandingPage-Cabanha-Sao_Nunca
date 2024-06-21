@@ -4,7 +4,7 @@ let verifier = 1;
 console.log(fullUrl);
 
 if (fullUrl.includes("github")) {
-	fullUrl = fullUrl.replace('/index', '').replace('/breeds', '').replace('/contactform', '').replace('/place', '');
+	fullUrl = fullUrl.replace('/index', '/').replace('/breeds', '/').replace('/contactform', '/').replace('/place', '/');
 }
 
 if (fullUrl.includes("localhost") || fullUrl.includes("127.0.0.1")) {
