@@ -30,7 +30,7 @@ document.getElementById('navbar__nosEncontre').onclick = function() {
 	console.log(verifier);
 
 	if (verifier == 1) {
-		window.location.href = fullUrl + "place";
+		window.location.href = fullUrl + "/place";
 	}
 	else {
 		window.location.href = fullUrl + "place.html";
@@ -42,7 +42,7 @@ document.getElementById('navbar__racas').onclick = function() {
 	console.log(verifier);
 
 	if (verifier == 1) {
-		window.location.href = fullUrl + "breeds";
+		window.location.href = fullUrl + "/breeds";
 	}
 	else {
 		window.location.href = fullUrl + "breeds.html";
@@ -51,7 +51,7 @@ document.getElementById('navbar__racas').onclick = function() {
 
 document.getElementById('navbar__contato').onclick = function() {
 	if (verifier == 1) {
-		window.location.href = fullUrl + "contactform";
+		window.location.href = fullUrl + "/contactform";
 	}
 	else {
 		window.location.href = fullUrl + "contactform.html";
@@ -60,7 +60,7 @@ document.getElementById('navbar__contato').onclick = function() {
 
 document.getElementById('navbar__home').onclick = function() {
 	if (verifier == 1) {
-		window.location.href = fullUrl + "index";
+		window.location.href = fullUrl + "/index";
 	}
 	else {
 		window.location.href = fullUrl + "index.html";
