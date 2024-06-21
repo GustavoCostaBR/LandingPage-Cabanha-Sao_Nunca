@@ -13,12 +13,13 @@ body {
 	margin: 0;
 	padding: 0;
 	background: linear-gradient(to bottom, var(--cor-primaria), var(--cor-secundaria));
+	min-height: 1150px;
 }
 
 .container {
 	width: 1080px;
 	margin: 0 auto;
-	height: 100%;
+	min-height: 1150px;
 	background: linear-gradient(to bottom, var(--cor-secundaria), var(--cor-primaria));
 	padding: 30px;
 }
@@ -40,19 +41,19 @@ body {
 }
 
 .cabecalho__secao__titulo {
-    float: left;
+	float: left;
 	font-size: 50px;
 	width: 50%;
-    margin: 0;
+	margin: 0;
 }
 
-.navbar{
-	ul{
+.navbar {
+	ul {
 		list-style: none;
 		padding: 0;
 		margin: 0;
 		float: right;
-		width: 40%;
+		width: 45%;
 	}
 }
 
@@ -63,8 +64,7 @@ body {
 	text-align: center;
 	margin-top: 35px;
 	color: var(--cor-fontes);
-	font-size: 15px;
-
+	font-size: 18px;
 }
 
 
@@ -73,14 +73,14 @@ body {
 /* Descricao + Slogan */
 
 .descricao::after {
-    content: "";
-    display: block;
-    clear: both;
+	content: "";
+	display: block;
+	clear: both;
 }
 
 .descricao {
 	/* background-color: #333; */
-    color: var(--cor-fontes);
+	color: var(--cor-fontes);
 	margin: 0;
 	padding: 0;
 }
@@ -131,6 +131,8 @@ body {
 	margin-top: 30px;
 	display: block;
 	filter: invert(100%);
+	border-radius: 500px;
+	padding: 0;
 }
 
 .descricao__slogan:hover {
@@ -159,6 +161,7 @@ body {
 	float: left;
 	width: 50%;
 	text-align: center;
+
 	p {
 		width: 80%;
 		margin-left: 54px;
@@ -202,56 +205,56 @@ body {
 	margin-bottom: 0px;
 }
 
-.contato__form{
+.contato__form {
 	float: center;
 }
 
 form {
-    max-width: 600px;
-    margin: 0 auto;
+	max-width: 600px;
+	margin: 0 auto;
 	padding: 20px;
-    background-color: var(--cor-fontes);
-    border-radius: 8px;
+	background-color: var(--cor-fontes);
+	border-radius: 8px;
 }
 
 .form-field {
-    clear: both;
-    margin-bottom: 15px;
+	clear: both;
+	margin-bottom: 15px;
 }
 
 .form-field label {
-    float: left;
-    width: 150px;
-    margin-top: 5px;
-    font-weight: bold;
+	float: left;
+	width: 150px;
+	margin-top: 5px;
+	font-weight: bold;
 }
 
 .form-field input[type="text"],
 .form-field input[type="email"],
 .form-field input[type="tel"] {
-    float: left;
-    width: calc(100% - 160px);
-    padding: 10px;
-    border: 1px solid var(--cor-borda);
-    border-radius: 4px;
-    box-sizing: border-box;
+	float: left;
+	width: calc(100% - 160px);
+	padding: 10px;
+	border: 1px solid var(--cor-borda);
+	border-radius: 4px;
+	box-sizing: border-box;
 }
 
 .form-field input[type="submit"] {
-    clear: both;
-    width: 100%;
-    padding: 10px;
-    background-color: var(--cor-primaria);
-    color: var(--cor-fontes);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+	clear: both;
+	width: 100%;
+	padding: 10px;
+	background-color: var(--cor-primaria);
+	color: var(--cor-fontes);
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
 }
 
 .form-field input[type="submit"]:hover {
-    background-color: var(--cor-secundaria);
+	background-color: var(--cor-secundaria);
 }
 
 .contato {
@@ -260,11 +263,45 @@ form {
 
 /* Contato */
 
+/* Nos encontre */
+
+#mapa {
+	display: block;
+	clear: both;
+	text-align: center;
+	width: 100%;
+
+
+	h3 {
+		text-align: center;
+		color: var(--cor-fontes);
+		font-size: 30px;
+		margin-top: 50px;
+		margin-bottom: 0px;
+	}
+
+	div {
+		background-color: black;
+
+		iframe {
+			width: 98.7%;
+			height: 500px;
+			padding: 7px 0px 2px 0px;
+		}
+	}
+
+
+}
+
+/* Nos encontre */
+
+
 /* Rodape */
 
 
-.redes__sociais{
-	/* float: left; */
+.redes__sociais {
+	clear: both;
+	padding-top: 50px;
 	width: 100%;
 	text-align: center;
 
@@ -272,6 +309,7 @@ form {
 		height: 60px;
 		padding-left: 0px;
 		margin-top: 40px;
+
 		li {
 			display: inline;
 			margin-left: 0;
