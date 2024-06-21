@@ -65,6 +65,12 @@ body {
 	margin-top: 35px;
 	color: var(--cor-fontes);
 	font-size: 18px;
+	transition: transform 0.3s ease;
+}
+
+.navbar__botoes:hover {
+	transform: scale(1.3);
+	cursor: pointer;
 }
 
 
@@ -133,6 +139,11 @@ body {
 	filter: invert(100%);
 	border-radius: 500px;
 	padding: 0;
+	transition: ease 0.3s;
+}
+.descricao__slogan:hover {
+	transform: scale(1.17);
+	cursor: pointer;
 }
 
 .descricao__slogan:hover {
@@ -242,7 +253,7 @@ form {
 
 .form-field input[type="submit"] {
 	clear: both;
-	width: 100%;
+	width: 97%;
 	padding: 10px;
 	background-color: var(--cor-primaria);
 	color: var(--cor-fontes);
@@ -323,8 +334,16 @@ form {
 				margin-left: 15px;
 				margin-right: 15px;
 				border-radius: 7px;
-
+				transition: transform 0.3s ease;
 			}
+
+			img:hover {
+				transform: scale(1.3);
+				cursor: pointer;
+			}
+
+
+
 		}
 	}
 
